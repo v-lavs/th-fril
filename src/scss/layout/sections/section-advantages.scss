@@ -1,0 +1,43 @@
+.section-advantages{
+  .block-logo{
+    margin-bottom: 30px;
+  }
+}
+
+.block-advantages {
+  &__item{
+    padding: 0 10px 20px;
+    max-width: 160px;
+  }
+  h5{
+    font-size: 18px;
+    color: $pink;
+  }
+  .bg-icon {
+    min-height: 130px;
+
+    &_many {
+      background-image: url(../assets/img/svg/many.svg);
+    }
+
+    &_technology {
+      background-image: url(../assets/img/svg/technology.svg);
+    }
+
+    &_backed {
+      background-image: url(../assets/img/svg/backed.svg);
+    }
+
+    &_returns {
+      background-image: url(../assets/img/svg/returns.svg);
+    }
+
+    &_shiping {
+      background-image: url(../assets/img/svg/shiping.svg);
+    }
+
+    &_based {
+      background-image: url(../assets/img/svg/based.svg);
+    }
+  }
+}

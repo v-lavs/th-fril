@@ -1,0 +1,35 @@
+.section {
+  padding-top: 54px;
+  &_grey {
+    background-color: $gray-100;
+  }
+
+  &__heading {
+
+    position: relative;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50vw;
+      background-color: $black;
+    }
+
+    &:before {
+      left: -50vw;
+    }
+
+    &:after {
+      right: -50vw;
+    }
+  }
+}
+
+
+
+

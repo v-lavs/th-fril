@@ -1,0 +1,41 @@
+.section-ingredients {
+  .ingredients-list {
+    max-width: 920px;
+    width: 100%;
+  }
+
+  .card-ingredient {
+    &__img {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &__title {
+      font-size: 1.875rem;
+    }
+  }
+
+  .wrap-img {
+    position: relative;
+    padding-top: 70%;
+    max-width: 280px;
+    width: 100%;
+    @include respond-to($xs) {
+      background: red;
+      padding-top: 35%;
+    }
+    @include respond-to($sm) {
+      padding-top: 45%;
+    }
+    @include respond-to($md) {
+      padding-top: 65%;
+    }
+    @include respond-to($lg) {
+      padding-top: 50%;
+    }
+  }
+}

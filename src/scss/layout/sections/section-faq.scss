@@ -1,0 +1,36 @@
+.section-faq {
+
+}
+
+.accordion-list {
+  &__item {
+    border-bottom: 1px solid #000;
+    padding: 0 40px;
+  }
+  &__content {
+    font-size: 17px;
+    padding-bottom: 15px;
+    line-height: 2;
+  }
+  &__title {
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    align-items: center;
+    justify-content: space-between;
+    &.collapsed {
+      &:after {
+        content: '+';
+      }
+    }
+    &:after {
+      content: '-';
+      position: relative;
+      transform: translateX(100%);
+      display: block;
+    }
+  }
+}

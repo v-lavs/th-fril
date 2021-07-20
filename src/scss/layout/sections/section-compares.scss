@@ -1,0 +1,47 @@
+.section-compares {
+  padding-bottom: 108px;
+}
+
+.table-compare {
+  max-width: 920px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #565656;
+  td {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  tr {
+    border-bottom: 1px solid #C4C4C4;
+  }
+  
+  .check-col {
+    width: 20%;
+    text-align: center;
+  }
+
+  .check,
+  .uncheck {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .check{
+    background-image: url(../assets/img/svg/check.svg);
+  }
+
+  .uncheck{
+    background-image: url(../assets/img/svg/uncheck.svg);
+  }
+}
+

@@ -1,0 +1,32 @@
+
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/button';
+@import 'components/nav';
+@import 'components/slider';
+
+@import 'components/modal';
+@import 'components/form';
+
+
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/section';
+@import 'layout/sections/section-advantages';
+@import 'layout/sections/section-testimonials';
+@import 'layout/sections/section-compares';
+@import 'layout/sections/section-result';
+@import 'layout/sections/section-reviews';
+@import 'layout/sections/section-ingredients';
+@import 'layout/sections/section-faq';
+@import 'layout/footer';
+
+
+
+
+
+

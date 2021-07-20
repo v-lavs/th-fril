@@ -1,0 +1,34 @@
+.nav-link {
+  color: #333333;
+}
+
+.header {
+  &__logo {
+    max-width: 200px;
+    height: auto;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+  }
+
+  &__top{
+    background-color: $pink;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 4px solid #fff;
+  }
+
+  &__bottom {
+    background-color: $gray-100;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+
+  .rating-logo {
+    margin-top: -3px;
+  }
+}
