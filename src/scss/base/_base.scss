@@ -3,27 +3,37 @@
   font-size: $font-size-root;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.bg-icon{
+.bg-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-.color-pink{
+
+.color-pink {
   color: $pink;
 }
 
-.bg-pink{
+.bg-pink {
   background-color: $pink;
 }
 
-.color-dark{
+.color-dark {
   color: #333333;
 }
+
+.color-dark-gray {
+  color: #616161;
+}
+
 .progress {
   background-color: #C4C4C4;
 }
@@ -34,6 +44,7 @@ img {
 
 .stars {
   display: flex;
+
   &__item {
     display: block;
     width: 17px;
@@ -41,13 +52,40 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../assets/img/star-empty.svg");
+
     &_fill {
       background-image: url("../assets/img/star-fill.svg");
     }
   }
 }
 
-.title-site{
+.bottles {
+  display: flex;
+
+  &__item {
+    margin-left: 5px;
+    background: url('../assets/img/svg/bottle.svg') no-repeat center;
+    width: 9px;
+    height: 29px;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.title-site {
   font-size: 37px;
   border-bottom: 2px solid $pink;
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .title-site {
+    font-size: 28px;
+  }
+  .table {
+    font-size: 12px;
+  }
 }
