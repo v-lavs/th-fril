@@ -1,6 +1,14 @@
 .section-product {
   padding-bottom: 60px;
 
+  .slider-for {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .sub-title {
     font-size: 18px;
   }

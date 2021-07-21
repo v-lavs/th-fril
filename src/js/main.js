@@ -2,12 +2,14 @@
 * to include js file write: `//= include ./path-to-file`
 * */
 
-//= include ../../node_modules/jquery/dist/jquery.js
-
 
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
+    $('.slider-for img').ezPlus({
+        zoomType: 'inner',
+        cursor: 'crosshair'
+    });
 //SLIDER
     $('.slider-for').slick({
         slidesToShow: 1,
@@ -20,8 +22,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        dots: true,
-        centerMode: true,
+        dots: false,
         focusOnSelect: true
     });
 

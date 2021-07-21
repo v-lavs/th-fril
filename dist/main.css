@@ -184,6 +184,12 @@ img {
   padding-bottom: 60px;
 }
 
+.section-product .slider-for img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .section-product .sub-title {
   font-size: 18px;
 }
