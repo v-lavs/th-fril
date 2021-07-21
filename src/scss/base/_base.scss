@@ -13,6 +13,13 @@ img {
   background-position: center;
   background-size: contain;
 }
+.color-pink{
+  color: $pink;
+}
+
+.bg-pink{
+  background-color: $pink;
+}
 
 .progress {
   background-color: #C4C4C4;
@@ -35,4 +42,9 @@ img {
       background-image: url("../assets/img/star-fill.svg");
     }
   }
+}
+
+.title-site{
+  font-size: 37px;
+  border-bottom: 2px solid $pink;
 }

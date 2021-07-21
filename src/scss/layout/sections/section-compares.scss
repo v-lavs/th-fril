@@ -6,20 +6,23 @@
   max-width: 920px;
   width: 100%;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 30px;
   color: #565656;
+
+  thead {
+    line-height: 1.3;
+
+  }
+
   td {
-    padding-top: 30px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 15px;
   }
 
   tr {
     border-bottom: 1px solid #C4C4C4;
   }
-  
+
   .check-col {
     width: 20%;
     text-align: center;
@@ -27,8 +30,9 @@
 
   .check,
   .uncheck {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -36,12 +40,30 @@
     background-size: contain;
   }
 
-  .check{
+  .check {
     background-image: url(../assets/img/svg/check.svg);
   }
 
-  .uncheck{
+  .uncheck {
     background-image: url(../assets/img/svg/uncheck.svg);
+  }
+
+  @include respond-to($lg) {
+    font-size: 22px;
+    thead {
+      font-size: 23px;
+    }
+    td {
+      padding-top: 30px;
+      padding-bottom: 25px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .check,
+    .uncheck {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 

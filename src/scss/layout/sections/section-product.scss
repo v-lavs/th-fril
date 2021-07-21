@@ -1,0 +1,101 @@
+.section-product {
+  .sub-title {
+    font-size: 18px;
+  }
+
+  &__item {
+    width: 100%;
+
+    &:nth-child(2) {
+      padding-left: 15px;
+    }
+  }
+
+  .link-cart {
+    box-shadow: -2px -6px 2px -3px rgba(194, 114, 95, 1) inset;
+  }
+
+  .line-break {
+    width: 100%;
+  }
+
+  .benefits__list {
+    line-height: 1.87;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        position: absolute;
+        content: url(../assets/img/svg/check-pink.svg);
+        width: 18px;
+        height: 15px;
+        left: -15px;
+        top: 2px;
+      }
+    }
+  }
+
+  @include respond-to($lg) {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+.card-bonus{
+  h5{
+    position: relative;
+  }
+  .old-cost{
+    color: #BDBDBD;
+  }
+  &__icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .label-checkmark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'GothamPro', sans-serif;
+    margin-bottom: 20px;
+
+    padding: 10px 16px 10px 40px;
+    transition: .35s;
+  }
+
+  .checkmark {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .check-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 2px 5px 1px rgba(21, 23, 23, 0.2);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: .35s;
+    -o-transition: .35s;
+    -moz-transition: .35s;
+    transition: .35s;
+    margin-left: -35px;
+  }
+
+  .checkmark:checked + .check-mark {
+    background-color: $pink;
+  }
+}

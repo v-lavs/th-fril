@@ -6,12 +6,18 @@
 
     <title>Thiicky</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
@@ -28,7 +34,9 @@
                          class="img header__logo-img">
                 </a>
                 <ul class="nav d-flex order-md-3">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <li class="nav-item">
@@ -52,7 +60,8 @@
                          src="./assets/img/square-rating.svg"
                          alt="">
 
-                    <img class="ml-2 rating-logo" src="./assets/img/trastpilot-rating-label.svg" alt="" width="66" height="17">
+                    <img class="ml-2 rating-logo" src="./assets/img/trastpilot-rating-label.svg" alt="" width="66"
+                         height="17">
                 </div>
 
             </div>
@@ -61,6 +70,208 @@
 </header>
 
 <main class="main">
+    <section class="section-product">
+        <div class="container d-flex flex-wrap">
+            <div class="section-product__item">
+                <div class="slider-for">
+                    <div class="slider-item"><img src="assets/img/product1.jpg" alt="" class="slide-item__img"></div>
+                    <div class="slider-item"><img src="assets/img/product1.jpg" alt="" class="slide-item__img"></div>
+                    <div class="slider-item"><img src="assets/img/product1.jpg" alt="" class="slide-item__img"></div>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-item">your content</div>
+                    <div class="slider-item">your content</div>
+                    <div class="slider-item">your content</div>
+                </div>
+            </div>
+            <div class="section-product__item">
+                <h1 class="title-site font-weight-bold mb-3 pb-1">The Thiicky shampoo kit, designed to thicken and
+                    revitalise fine hair.</h1>
+                <div class="">
+                    <div class="sub-title font-italic pr-lg-3">“After only 3-4 weeks of using the Thiicky hair kit I was
+                        amazed
+                        how strong my hair felt, i just suddenly had bigger fuller hair”. - Amanda K
+                    </div>
+                    <ul class="p-4 mb-4 benefits__list text-capitalize text-small list-group list-group-flush">
+                        <li>30 day money back guarantee + FREE delivery on all orders</li>
+                        <li>Australian made and Shipped</li>
+                        <li>Natural and chemical free formula</li>
+                        <li>Designed to grow and thicken your hair</li>
+                    </ul>
+
+                    <div class="card py-10 pr-16 pl-40 card-bonus mb-4">
+                        <label for="card1" class="label-checkmark d-flex">
+                            <input type="radio" id="card1" class="checkmark" name="bonus" value="$129.60">
+                            <span class="check-mark"></span>
+                            <img src="assets/img/product1m.jpg" alt="‘The Standard Pack" class="card-bonus__img">
+                            <div class="card-bonus__content text-capitalize">
+                                <h5 class="pl-4"><img src="assets/img/svg/reward-red.svg" alt="reward red" class="card-bonus__icon">
+                                    <strong>Package 1 -</strong> ‘The Standard Pack’</h5>
+                                <div class="cost text-right">
+                                    <del class="old-cost">$162.00</del>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>1 x Shampoo kits<br>All 4 Products</div>
+                                    <div>$129.60</div>
+                                </div>
+                                <div class="d-flex justify-content-between color-pink text-uppercase">
+                                    <div>SAVE 20%</div>
+                                    <div>SAVE $32.40!</div>
+                                </div>
+                            </div>
+                        </label>
+                        <!--<div class="row">-->
+                        <!--<label for="term_48" class="label-checkmark">-->
+                        <!--<input type="radio" id="card1" class="checkmark" name="bonus" value="$129.60" checked="checked">-->
+                        <!--<span class="check-mark"></span>-->
+                        <!--<span>48</span>-->
+                        <!--<span class="small-text">Monate</span>-->
+                        <!--</label>-->
+                        <!--<div class="col-auto radio">-->
+                        <!--<input type="radio" name="bonus" value="$129.60" checked="checked">-->
+
+                        <!--<img src="img/Goods1.jpg" class="pl-2 img-fluid" alt="Goods">-->
+                        <!--</div>-->
+                        <!--<div class="col-7">-->
+                        <!--<p class="d-flex radio__title align-items-center"><img src="img/Medal1.svg"-->
+                        <!--alt="Medal">-->
+                        <!--<b class="pl-2">Package 1 -</b> ‘The Standard Pack’</p>-->
+
+                        <!--<p class="d-flex justify-content-between">1 X Shampoo Kits <span-->
+                        <!--class="old__price">$162.00</span>-->
+                        <!--</p>-->
+                        <!--<p class="d-flex justify-content-between align-items-center">All 4 Products <span-->
+                        <!--class="new__price">$129.60</span></p>-->
+                        <!--<p class="d-flex new__price justify-content-between">SAVE 20% <span-->
+                        <!--class="new__price">SAVE $32.40!</span>-->
+                        <!--</p>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="card mb-4">
+                        <div class="row">
+                            <div class="col-auto radio">
+                                <input class="color-pink" type="radio" name="bonus" value="$226.80 ">
+                                <img src="img/Goods2.jpg" class="pl-2 img-fluid" alt="Goods">
+                            </div>
+                            <div class="col-7">
+                                <p class="d-flex radio__title align-items-center"><img src="img/Medal2.svg"
+                                                                                       alt="Medal">
+                                    <b class="pl-2">Package 2 -</b> ‘The Value Pack’</p>
+
+                                <p class="d-flex justify-content-between">2 X Shampoo Kits <span
+                                        class="old__price">$324.00</span>
+                                </p>
+                                <p class="d-flex justify-content-between align-items-center">8 Products <span
+                                        class="new__price">$226.80</span></p>
+                                <p class="d-flex new__price justify-content-between">SAVE 30% <span
+                                        class="new__price">SAVE $97.20!</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="row">
+                            <div class="col-auto radio">
+                                <input class="color-pink" type="radio" name="bonus" value="$36.00">
+                                <img src="img/Goods3.jpg" class="pl-2 img-fluid" alt="Goods">
+                            </div>
+                            <div class="col-7">
+                                <h4>BONUS VALUE 25% OFF!</h4>
+                                <small>Rating: <span class="fa fa-star checked"></span><span
+                                        class="fa fa-star checked"></span><span
+                                        class="fa fa-star checked"></span><span
+                                        class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    5.0
+                                </small>
+
+                                <p class="d-flex justify-content-between">1 X Derma Roller <span
+                                        class="old__price">$48.00</span>
+                                </p>
+                                <p class="d-flex justify-content-between align-items-center">
+                                    Scalp and follicle stimulator,
+                                    grow hair faster with this
+                                    non-chemical device
+                                    <span class="new__price">$129.60</span>
+                                </p>
+                                <p class="new__price d-flex justify-content-end">SAVE $12.00!</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="link-cart py-3 btn btn-lg btn-block text-white bg-pink">
+                        <img src="assets/img/svg/cart.svg" alt="cart"> Add To Cart
+                        <span class="bonus-amount"></span>
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center text-center">
+                        <p>All transactions secured and encrypted</p>
+                        <img class="pl-2" src="img/Payment1.svg" alt="Payment">
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <img src="img/Payment2.svg" alt="Payment">
+                        <img src="img/Logo2.svg" class="pl-2" alt="Thiicky">
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-break"></div> <!-- break -->
+            <div class="section-product__item">
+                <p>“A potent Australian formulated shampoo range, designed to enhance fine hair through the use of
+                    natural oils. The main ingredient, Tamanu Oil is known to address hair loss, support follicle
+                    growth, remove loose dandruff and revitalise hairs’ natural shine and lustre.”
+                </p>
+                <ul class="item__list">
+                    <li>Silicone Free</li>
+                    <li>Guaranteed Results</li>
+                    <li>Cruelty Free &amp; Vegan</li>
+                    <li>Australian Made And Owned</li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <h5>How much do I need?</h5>
+                    <p>Recommend Quality</p>
+                </div>
+                <div class="col">
+                    <ul class="item__info">
+                        <li>Short hair</li>
+                        <li>1 pump</li>
+                        <li>Every 2 days</li>
+                        <li><img src="assets/img/svg/bottle.svg" alt="Bottle"></li>
+                    </ul>
+                    <ul class="item__info">
+                        <li>Medium hair</li>
+                        <li>1.5 pumps</li>
+                        <li>Every 2-3 days</li>
+                        <li><img src="assets/img/svg/bottle.svg" alt="Bottle"><img src="assets/img/svg/bottle.svg"
+                                                                                   alt="Bottle"></li>
+                    </ul>
+                    <ul class="item__info">
+                        <li>Long hair</li>
+                        <li>2 pumps</li>
+                        <li>Every 3 days</li>
+                        <li><img src="assets/img/svg/bottle.svg" alt="Bottle"><img src="assets/img/svg/bottle.svg"
+                                                                                   alt="Bottle"> <img
+                                src="assets/img/svg/bottle.svg" alt="Bottle"> <img src="assets/img/svg/bottle.svg"
+                                                                                   alt="Bottle"></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="assets/img/svg/fast-delivery.svg" class="pr-1" alt="Car">
+                        <small>Shipped from Melbourne</small>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="assets/img/svg/molecula.svg" class="pr-1" alt="Parabens">
+                        <small>No parabens or sulphates</small>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="assets/img/svg/kangaroo.svg" class="pr-1" alt="Kangaroo">
+                        <small>Made In Australia</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section section_grey pt-5 section-advantages">
         <div class="container">
             <div class="text-center overflow-hidden">
@@ -363,7 +574,7 @@
                                 Keep
                                 Using Them And See How Much Thicker And Fuller It Can Get</p>
                         </div>
-                        <footer class="blockquote-footer text-end">Stephanie L</footer>
+                        <footer class="blockquote-footer text-right">Stephanie L</footer>
                     </blockquote>
                     <div class="embed-container embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" title="vimeo-player"
@@ -376,9 +587,11 @@
                         <div class="blockquote__text text-center">
                             <p class="mb-0">I Have Seen Such An Incredible Difference In My Hair Growth</p>
                         </div>
-                        <footer class="blockquote-footer text-end">Caity C</footer>
+                        <footer class="blockquote-footer text-right">Caity C</footer>
                     </blockquote>
                     <div class="embed-container embed-responsive embed-responsive-16by9">
+                        Ссылка на видео
+
                         <iframe title="vimeo-player" src="https://player.vimeo.com/video/575275772" width="640"
                                 height="1137" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -474,86 +687,150 @@
                     <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-1"
                         aria-expanded="true"
                         aria-controls="collapseOne">
-                        Collapsible Group Item #1
+                        What is Tamanu Oil?
                     </h5>
 
                     <div id="faq-1" class="accordion-list__content collapse" data-parent="#accordion">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                        probably haven't heard of them accusamus labore sustainable VHS.
+                        <p>Tamanu Oil is an amazing oil sourced from the nut off a Tamanu tree.</p>
+
+                        <p>Tamanu Oil is full of antioxidants, moisturisers and good fatty acids. This wonder oil has
+                            many benefits for hair, ranging from scalp and skin care at the roots, to hydrating and
+                            repairing the very tips of any damaged follicle.</p>
+
+                        <p>Extensive research has been done into this wonderful nut full of liquid gold... So we put it
+                            in a shampoo range, just for you!</p>
                     </div>
                 </div>
-
                 <div class="accordion-list__item">
                     <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-2"
                         aria-expanded="true">
-                        Collapsible Group Item #2
+                        Why do you suggest to shampoo twice?
                     </h5>
 
                     <div id="faq-2" class="accordion-list__content collapse" data-parent="#accordion">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                        probably haven't heard of them accusamus labore sustainable VHS.
+                        <p>
+                            Your first shampoo is responsible for removing oils and build-up on your scalp. It is ALSO
+                            responsible for opening up your cuticle layer (your hair shaft). This allows the second
+                            shampoo to CLEAN the hair shaft itself, leaving you with weightless hair, giving you better
+                            styles for a longer period of time.
+                        </p>
                     </div>
                 </div>
-
                 <div class="accordion-list__item">
                     <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-3"
                         aria-expanded="true">
-                        Collapsible Group Item #3
+                        What ingredients are in these magical products?
                     </h5>
 
                     <div id="faq-3" class="accordion-list__content collapse" data-parent="#accordion">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                        probably haven't heard of them accusamus labore sustainable VHS.
+                        <p><strong>Let the magic begin...</strong></p>
+
+                        <p><strong>Watermelon Shampoo,</strong></p>
+
+                        <p>Aqua, Sodium Methyl Cocoyl Taurate, Cocamidopropyl betaine, Polyquaternium 7, Sodium
+                            Lauroamphoacetate, Glycerin, Coco-Glucoside, Glyceryl Oleate, Propanediol, Hydrolyzed Jojoba
+                            Esters, Phenoxyethanol, Ethylhexylglycerin, Hydrolyzed Quinoa, Calophyllum Inophyllum
+                            (Tamanu)
+                            Seed Oil*, Rosmarinus Officinalis (Rosemary) Leaf Oil*, Cocos Nucifera (Coconut) Oil*,
+                            Simmondsia Chinensis Seed Oil (Jojoba) oil*, Parfum, Polyquaternium-10, Potassium Sorbate,
+                            Ascophyllum Nodosum (Seaweed) Extract, Hylocereus Undatus Fruit (Dragonfruit) Extract*,
+                            Eucalyptus Globulus Leaf (Tasmanian Blue Gum) Extract*, Panax Ginseng Root Extract*,
+                            Urtica Dioica (Nettle) Extract*, Telopea Speciosissima Leaf (Waratah) Extract*, Citric Acid,
+                            CI 60730.</p>
+
+                        <p><sup>*</sup> Certified Organic Ingredients</p>
+
+                        <p><strong>Watermelon Conditioner</strong></p>
+
+                        <p>Aqua, Glycerin, Cetearyl Alcohol, Behentrimonium Chloride, Coco-Caprylate, Parfum, Panthenol
+                            (ProVitamin-B5), Polyquaternium-10, Argania Spinosa Kernel Oil (Argan Oil)*, Calophyllum
+                            Inophyllum (Tamanu) Seed Oil, Sclerocarya Birrea (Marula) Seed Oil*, Cocos Nucifera
+                            (Coconut)
+                            Oil*, Olea Europaea (Olive) Fruit Oil*, Persea Gratissima (Avocado) Oil*, Prunus Amygdalus
+                            Dulcis (Almond) Oil*, Hylocereus Undatus Fruit (Dragonfruit) Extract*, Eucalyptus Globulus
+                            Leaf (Tasmanian Blue Gum) Extract*, Ethylhexylglycerin, Phenoxyethanol, Sodium Edetate,
+                            Citric Acid, CI 60730.</p>
+
+                        <p><sup>*</sup> Certified Organic Ingredients</p>
+
+                        <p><strong>Textured Repair Spray</strong></p>
+
+                        <p>Aqua, Sodium Chloride, Cetrimonium Chloride, Propylene Glycol, Glycerin, PEG-7 Glyceryl
+                            Cocoate, Ethylhexylglycerin, Phenoxyethanol, Hydrolyzed Jojoba Esters, Hydrolyzed Quinoa,
+                            Parfum, Ascophyllum Nodosum (Seaweed) Extract, Calophyllum Inophyllum (Tamanu) Seed Oil*,
+                            Sclerocarya Birrea (Marula) Seed Oil*, Persea Gratissima (Avocado) Oil*, Cocos Nucifera
+                            (Coconut) Oil*, Citric acid.</p>
+
+                        <p><sup>*</sup>Certified Organic Ingredients</p>
+
+                        <p><strong>Super Serum</strong></p>
+
+                        <p>Ricinus Communis (Castor) Seed Oil*, Prunus Amygdalus Dulcis (Almond) Oil*, Caprylic/Capric
+                            Triglyceride, Argania Spinosa Kernel Oil (Argan) Oil*, Calophyllum Inophyllum (Tamanu) Seed
+                            Oil*, Rosmarinus Officinalis (Rosemary) Leaf Oil*, Cocos Nucifera (Coconut) Oil*, Olea
+                            Europaea (Olive) Fruit Oil*.</p>
+
+                        <p><sup>*</sup>Certified Organic Ingredients</p>
                     </div>
                 </div>
                 <div class="accordion-list__item">
                     <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-4"
                         aria-expanded="true">
-                        Collapsible Group Item #4
+                        Does your range have nasty ingredients?
+
                     </h5>
 
                     <div id="faq-4" class="accordion-list__content collapse" data-parent="#accordion">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                        probably haven't heard of them accusamus labore sustainable VHS.
+                        <p>
+                            We pride ourselves on using some of the best ingredients available. No sulphates, parabens
+                            or silicones. Our range is also cruelty free, Australian made and colour safe... does it
+                            get better?
+                        </p>
                     </div>
                 </div>
                 <div class="accordion-list__item">
                     <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-5"
                         aria-expanded="true">
-                        Collapsible Group Item #5
+                        Will the colour of the shampoo and conditioner effect my hair colour?
                     </h5>
 
                     <div id="faq-5" class="accordion-list__content collapse" data-parent="#accordion">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                        probably haven't heard of them accusamus labore sustainable VHS.
+                        <p>
+                            Of course not silly! We have made sure the levels of colour in the range is JUST enough to
+                            give
+                            the colour a kick, but not enough to effect the tone of your hair. Why? because its pretty
+                            :D
+                        </p>
                     </div>
                 </div>
+                <div class="accordion-list__item">
+                    <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-6"
+                        aria-expanded="true">
+                        Why are the active ingredients different in each bottle?
+                    </h5>
 
+                    <div id="faq-6" class="accordion-list__content collapse" data-parent="#accordion">
+                        <p>
+                            Each of our four bottles serve a purpose. They all have something different to focus on. So
+                            of course we have altered our oil decisions as we were formulating to ensure you get the
+                            MOST out of each and every product.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-list__item">
+                    <h5 class="accordion-list__title collapsed mb-0" data-toggle="collapse" data-target="#faq-7"
+                        aria-expanded="true">
+                        Are the bottles sold seperatly?
+                    </h5>
+
+                    <div id="faq-7" class="accordion-list__content collapse" data-parent="#accordion">
+                        <p>
+                            Absolutely! Once you have bought the shampoo kit and find you're in need of a top up of a
+                            certain product, we are here for you! Stocks are limited so get in quick, see our
+                            "top selling" page for the individual items.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -577,9 +854,11 @@
     </div>
 </footer>
 
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

@@ -1,56 +1,77 @@
-.section-result{
+.section-result {
 
 }
 
-.blockquote{
-  &__text{
-    padding: 35px 65px 67px;
+.blockquote {
+  &__text {
+    padding: 18px 60px 40px;
     position: relative;
-    font-size: 1.75rem;
+    font-size: 20px;
     color: black;
+
     &:before,
-    &:after{
+    &:after {
       position: absolute;
       content: '';
       display: block;
-      width: 72px;
-      height: 67px;
+      width: 56px;
+      height: 53px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
     }
-    &:before{
+
+    &:before {
       left: 0;
       top: 0;
       background-image: url(../assets/img/svg/quote-left.svg);
     }
-    &:after{
+
+    &:after {
       right: 0;
       bottom: 0;
       background-image: url(../assets/img/svg/quote-right.svg);
     }
   }
-  &-footer{
-    font-size: 2.125em;
+
+  &-footer {
+    font-size: 26px;
     color: $pink;
     padding-top: 10px;
-    text-align: right;
+  }
+
+  @include respond-to($lg) {
+    &__text {
+      padding: 35px 65px 67px;
+      font-size: 28px;
+      &:before,
+      &:after {
+        width: 72px;
+        height: 67px;
+      }
+    }
+    &-footer {
+      font-size: 34px;
+    }
   }
 }
 
-.customers{
+.customers {
   max-width: 920px;
   width: 100%;
-  &__item{
+
+  &__item {
     margin-bottom: 68px;
   }
-  .embed-container{
+
+  .embed-container {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
   }
+
   .embed-container iframe,
   .embed-container object,
   .embed-container embed {
