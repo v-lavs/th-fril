@@ -187,8 +187,6 @@ img {
   color: #000000;
   font-size: 18px;
   font-weight: 300;
-  font-family: 'GothamPro', sans-serif;
-  margin-bottom: 20px;
   padding: 10px 16px 10px 40px;
   transition: .35s;
 }
@@ -204,14 +202,10 @@ img {
   position: absolute;
   width: 20px;
   height: 20px;
-  box-shadow: 0 2px 5px 1px rgba(21, 23, 23, 0.2);
   background-color: #ffffff;
-  border: none;
+  border: 1px solid #EA9380;
   border-radius: 50%;
   display: inline-block;
-  -webkit-transition: .35s;
-  -o-transition: .35s;
-  -moz-transition: .35s;
   transition: .35s;
   margin-left: -35px;
 }
