@@ -51,24 +51,22 @@
   border: 1px solid #989898;
   color: #333333;
 
-  .card-bonus__img_mark{
+  .wrap-img_mark{
       position: relative;
-
       &:before{
         position: absolute;
         content: 'X2';
-        text-align: center;
-        vertical-align: middle;
-        font-size: 18px;
+        justify-content: center;
+        align-items: center;
         font-weight: 700;
-        line-height: 13px;
-        display: block;
+        display: flex;
         width: 33px;
         height: 33px;
+        border-radius: 50%;
         background: #FFFFFF;
-        border: 3px solid rgba(255, 255, 255, 0.66);
-        left: 0;
-        top: 0;
+        box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.66);
+        left:12px;
+        top: 9px;
         z-index: 1;
       }
     }
