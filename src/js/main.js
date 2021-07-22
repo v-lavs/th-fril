@@ -6,7 +6,7 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
-    function initZoomImage () {
+    function initZoomImage() {
         return $('#zoom_img').ezPlus({
             zoomType: 'inner',
             responsive: true,
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     let zoomImage = initZoomImage();
 
-    function reInitZoomImage () {
+    function reInitZoomImage() {
         // ReInit zoom plugin
         const plugin = $(zoomImage).data('ezPlus');
         const action = 'hide';
@@ -44,6 +44,7 @@ $(document).ready(function () {
     }
 
     let intervalId = addInterVal();
+
     $('#gal_1 a').click(function () {
         clearInterval(intervalId);
         intervalId = addInterVal();
@@ -74,6 +75,17 @@ $(document).ready(function () {
         }
     }
 
+    function cloneResponsiveHtml() {
+        const mobBlock = $('#productMobContent');
+        const desktopBlock = $('#productMainContent');
+        if (!mobBlock.html()) {
+            const content = desktopBlock.html();
+            mobBlock.html(content);
+        }
+    }
+
+    cloneResponsiveHtml();
+
     $(window).resize(function () {
         rtime = new Date();
         if (timeout === false) {
@@ -82,5 +94,7 @@ $(document).ready(function () {
         }
     });
 
+
+    cloneResponsiveHtml();
 });
 
