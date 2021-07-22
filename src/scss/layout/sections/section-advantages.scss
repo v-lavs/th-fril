@@ -1,5 +1,22 @@
 .section-advantages{
-
+  .block-logo {
+    flex-wrap: wrap;
+    &__item{
+      width: 35%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    img{
+      height: 55px;
+    }
+  }
+  @include respond-to($md){
+    .block-logo {
+img{
+  height: auto;
+}
+    }
+  }
 }
 
 .block-advantages {

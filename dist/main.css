@@ -184,12 +184,6 @@ img {
   padding-bottom: 60px;
 }
 
-.section-product .slider-for img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .section-product .sub-title {
   font-size: 18px;
 }
@@ -389,6 +383,20 @@ img {
   background-image: url("../assets/img/svg/star-fill-yellow.svg");
 }
 
+.section-advantages .block-logo {
+  flex-wrap: wrap;
+}
+
+.section-advantages .block-logo__item {
+  width: 35%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-advantages .block-logo img {
+  height: 55px;
+}
+
 .block-advantages__item {
   padding: 0 10px 20px;
   max-width: 160px;
@@ -541,7 +549,7 @@ img {
 }
 
 .section-reviews {
-  padding-bottom: 108px;
+  padding-bottom: 75px;
 }
 
 .section-reviews .gallery-widget {
@@ -671,12 +679,20 @@ img {
     columns: 2;
   }
 
+  .section-reviews {
+    padding-bottom: 108px;
+  }
+
   .section-ingredients .wrap-img {
     padding-top: 45%;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .section-advantages .block-logo img {
+    height: auto;
+  }
+
   .section-ingredients .wrap-img {
     padding-top: 65%;
   }
