@@ -1,11 +1,11 @@
 :root {
   font-family: $font-family-sans-serif;
   font-size: $font-size-root;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Open Sans', sans-serif !important;
-  scroll-behavior: smooth;
 }
 
 img {
