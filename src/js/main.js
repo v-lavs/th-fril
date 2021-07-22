@@ -96,5 +96,26 @@ $(document).ready(function () {
 
 
     cloneResponsiveHtml();
+
+    const waypoints = $('#bars_section').waypoint({
+        handler: function (direction) {
+            console.log($(this.element));
+            if (this.element.id === 'bars_section') {
+                $(this.element).find('.progress-bar').each(function () {
+                    $(this).css({width: $(this).data('percents') + '%'});
+                })
+            }
+        },
+        offset: '80%'
+    });
+
+
+    const sectionWaypoints = $('.slide-up').waypoint({
+        handler: function (direction) {
+            $(this.element).addClass('active-anim');
+        },
+        offset: '80%'
+    });
+
 });
 

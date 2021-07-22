@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -47,6 +48,8 @@ img {
 }
 
 .progress-bar {
+  width: 0;
+  transition: 1s;
   background-color: #00B67A;
 }
 
@@ -83,6 +86,20 @@ img {
 .title-site {
   font-size: 37px;
   border-bottom: 2px solid #EA9380;
+}
+
+.slide-up {
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-transition: linear .65s;
+  transition: linear .65s;
+}
+
+.slide-up.active-anim {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .text-small {
@@ -468,13 +485,14 @@ img {
 }
 
 .section-advantages .block-logo__item {
-  width: 35%;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
 }
 
 .section-advantages .block-logo img {
-  height: 55px;
+  max-width: 120px;
+  max-height: 47px;
+  vertical-align: top;
 }
 
 .block-advantages__item {
@@ -769,7 +787,13 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
+  .section-advantages .block-logo__item {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .section-advantages .block-logo img {
+    max-width: 100%;
     height: auto;
   }
 
