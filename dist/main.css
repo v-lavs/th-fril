@@ -779,10 +779,6 @@ img {
     order: 2;
   }
 
-  .header .header__bottom {
-    padding-bottom: 4px;
-  }
-
   .header .header__rating {
     order: 1;
     padding: 0;
