@@ -1,13 +1,40 @@
 .section-product {
   padding-bottom: 60px;
 
+  .zoom-img__wrap {
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .gallery {
+    display: flex;
+
+    a {
+      display: block;
+      width: 18%;
+      padding: 7px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
   .sub-title {
     font-size: 18px;
   }
 
   .container {
     display: flex;
-    flex-direction: column;
+
   }
 
   &__item {
@@ -96,9 +123,7 @@
 
   @include respond-to($lg) {
     .container {
-      display: block;
-      column-count: 2;
-      column-gap: 30px;
+      display: flex;
     }
 
     &__item {
@@ -254,6 +279,7 @@
         margin-bottom: 5px;
         min-height: 40px;
       }
+
       &__icon {
         width: 30px;
         height: auto;
@@ -261,3 +287,4 @@
     }
   }
 }
+

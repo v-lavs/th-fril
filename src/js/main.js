@@ -6,31 +6,13 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
-    // $('.slider-for img').ezPlus({
-    //     zoomType: 'inner',
-    //     cursor: 'crosshair',
-    //     responsive: true,
-    // });
-
-
-//SLIDER
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        autoplaySpeed:4000,
-        asNavFor: '.slider-nav',
-
-            });
-
-
-    $('.slider-nav').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        focusOnSelect: true
+    $('#zoom_img').ezPlus({
+        zoomType: 'inner',
+        responsive : true,
+        gallery: 'gal_1',
+        cursor: 'pointer',
+        galleryActiveClass: 'active',
+        imageCrossfade: false,
     });
 
 });

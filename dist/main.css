@@ -118,6 +118,15 @@ img {
   color: #333333;
 }
 
+.navbar-toggler-icon {
+  width: 32px;
+  height: 24px;
+  background-image: url(../assets/img/svg/burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .header__logo {
   max-width: 200px;
   height: auto;
@@ -184,13 +193,38 @@ img {
   padding-bottom: 60px;
 }
 
+.section-product .zoom-img__wrap {
+  width: 100%;
+}
+
+.section-product .zoom-img__wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-product .gallery {
+  display: flex;
+}
+
+.section-product .gallery a {
+  display: block;
+  width: 18%;
+  padding: 7px;
+}
+
+.section-product .gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .section-product .sub-title {
   font-size: 18px;
 }
 
 .section-product .container {
   display: flex;
-  flex-direction: column;
 }
 
 .section-product__item {
@@ -700,9 +734,7 @@ img {
 
 @media only screen and (min-width: 992px) {
   .section-product .container {
-    display: block;
-    column-count: 2;
-    column-gap: 30px;
+    display: flex;
   }
 
   .section-product__item > div {
