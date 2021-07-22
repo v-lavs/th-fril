@@ -15,5 +15,11 @@ $(document).ready(function () {
         imageCrossfade: false,
     });
 
+    function addInterVal() {
+        setInterval(function () {
+
+        }, 4000);
+    }
+
 });
 

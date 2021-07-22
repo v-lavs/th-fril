@@ -38,7 +38,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="header__nav collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 order-lg-3">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Benefits</a>
@@ -54,333 +54,331 @@
                         </li>
                     </ul>
                 </div>
+                <div class="header__rating d-flex align-items-center justify-content-center">
+                    <span>Excellent</span>
+                    <img width="74"
+                         height="13"
+                         class="rating-square__img ml-2"
+                         src="./assets/img/square-rating.svg"
+                         alt="">
+
+                    <img class="ml-2 rating-logo" src="./assets/img/trastpilot-rating-label.svg" alt="" width="66"
+                         height="17">
+                </div>
             </nav>
-            <div class="header__rating d-flex align-items-center flex-grow-1 m-a">
-                <span>Excellent</span>
-                <img width="74"
-                     height="13"
-                     class="rating-square__img ml-2"
-                     src="./assets/img/square-rating.svg"
-                     alt="">
-
-                <img class="ml-2 rating-logo" src="./assets/img/trastpilot-rating-label.svg" alt="" width="66"
-                     height="17">
-            </div>
-
         </div>
-    </div>
     </div>
 </header>
 
 <main class="main">
     <section class="section-product">
         <div class="container d-flex flex-wrap">
-                <div class="col-12 col-lg-6">
-                    <div class="section-product__item">
-                        <div class="zoom-img__wrap">
-                            <img id="zoom_img" src="assets/img/product/1.jpg"
-                                 data-zoom-image="assets/img/product/1.jpg">
-                        </div>
-
-                        <div id="gal_1" class="gallery">
-                            <a href="#" data-image="assets/img/product/1.jpg"
-                               data-zoom-image="assets/img/product/1.jpg">
-                                <img id="img_01" src="assets/img/thumb-product1.jpg"/>
-                            </a>
-
-                            <a href="#" data-image="assets/img/product/2.jpg"
-                               data-zoom-image="assets/img/product/2.jpg">
-                                <img id="img_02" src="assets/img/thumb-product2.jpg"/>
-                            </a>
-
-                            <a href="#" data-image="assets/img/product/3.jpg"
-                               data-zoom-image="assets/img/product/3.jpg">
-                                <img id="img_03" src="assets/img/thumb-product3.jpg"/>
-                            </a>
-
-                            <a href="#" data-image="assets/img/product/4.jpg"
-                               data-zoom-image="assets/img/product/4.jpg">
-                                <img id="img_04" src="assets/img/thumb-product4.jpg"/>
-                            </a>
-                            <a href="#" data-image="assets/img/product/5.jpg"
-                               data-zoom-image="assets/img/product/5.jpg">
-                                <img id="img_05" src="assets/img/thumb-product5.jpg"/>
-                            </a>
-
-                        </div>
+            <div class="col-12 col-lg-6">
+                <div class="section-product__item">
+                    <div class="zoom-img__wrap">
+                        <img id="zoom_img" src="assets/img/product/1.jpg"
+                             data-zoom-image="assets/img/product/1.jpg">
                     </div>
 
-                    <div class="section-product__item">
-                        <div>
-                            <p class="color-dark-gray">“A potent Australian formulated shampoo range, designed to
-                                enhance
-                                fine
-                                hair
-                                through the use of natural oils. The main ingredient, Tamanu Oil is known to address
-                                hair
-                                loss,
-                                support follicle growth, remove loose dandruff and revitalise hairs’ natural shine and
-                                lustre.”
-                            </p>
+                    <div id="gal_1" class="gallery">
+                        <a href="#" class="active" data-image="assets/img/product/1.jpg"
+                           data-zoom-image="assets/img/product/1.jpg">
+                            <img id="img_01" src="assets/img/thumb-product1.jpg"/>
+                        </a>
 
-                            <ul class="bullet-list color-pink">
-                                <li>Silicone Free</li>
-                                <li>Guaranteed Results</li>
-                                <li>Cruelty Free &amp; Vegan</li>
-                                <li>Australian Made And Owned</li>
+                        <a href="#" data-image="assets/img/product/2.jpg"
+                           data-zoom-image="assets/img/product/2.jpg">
+                            <img id="img_02" src="assets/img/thumb-product2.jpg"/>
+                        </a>
+
+                        <a href="#" data-image="assets/img/product/3.jpg"
+                           data-zoom-image="assets/img/product/3.jpg">
+                            <img id="img_03" src="assets/img/thumb-product3.jpg"/>
+                        </a>
+
+                        <a href="#" data-image="assets/img/product/4.jpg"
+                           data-zoom-image="assets/img/product/4.jpg">
+                            <img id="img_04" src="assets/img/thumb-product4.jpg"/>
+                        </a>
+                        <a href="#" data-image="assets/img/product/5.jpg"
+                           data-zoom-image="assets/img/product/5.jpg">
+                            <img id="img_05" src="assets/img/thumb-product5.jpg"/>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="section-product__item">
+                    <div>
+                        <p class="color-dark-gray">“A potent Australian formulated shampoo range, designed to
+                            enhance
+                            fine
+                            hair
+                            through the use of natural oils. The main ingredient, Tamanu Oil is known to address
+                            hair
+                            loss,
+                            support follicle growth, remove loose dandruff and revitalise hairs’ natural shine and
+                            lustre.”
+                        </p>
+
+                        <ul class="bullet-list color-pink">
+                            <li>Silicone Free</li>
+                            <li>Guaranteed Results</li>
+                            <li>Cruelty Free &amp; Vegan</li>
+                            <li>Australian Made And Owned</li>
+                        </ul>
+
+                        <div class="info">
+                            <div class="info__header d-flex justify-content-between">
+                                <h5 class="info__title">How much do I need?</h5>
+                                <p class="info__subtitle">Recommend Quality</p>
+                            </div>
+
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>Short hair</td>
+                                    <td>1 pump</td>
+                                    <td>Every 2 days</td>
+                                    <td>
+                                        <div class="bottles">
+                                            <div class="bottles__item"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Medium hair</td>
+                                    <td>1.5 pump</td>
+                                    <td>Every 2-3 days</td>
+                                    <td>
+                                        <div class="bottles">
+                                            <div class="bottles__item"></div>
+                                            <div class="bottles__item"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Long hair</td>
+                                    <td>2 pump</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="bottles">
+                                            <div class="bottles__item"></div>
+                                            <div class="bottles__item"></div>
+                                            <div class="bottles__item"></div>
+                                            <div class="bottles__item"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="info__footer row">
+                                <div class="mb-2 col-sm-4 d-flex align-items-center">
+                                    <div class="info__icon-wrap">
+                                        <img src="./assets/img/svg/fast-delivery.svg" class="info__icon" alt="Car">
+                                    </div>
+                                    <small>Shipped from Melbourne</small>
+                                </div>
+                                <div class="mb-2 col-sm-4 d-flex align-items-center">
+                                    <div class="info__icon-wrap">
+                                        <img src="./assets/img/svg/molecula.svg" class="info__icon" alt="Parabens">
+                                    </div>
+                                    <small>No parabens or sulphates</small>
+                                </div>
+                                <div class="mb-2 col-sm-4 d-flex align-items-center">
+                                    <div class="info__icon-wrap">
+                                        <img src="./assets/img/svg/kangaroo.svg" class="info__icon" alt="Kangaroo">
+                                    </div>
+                                    <small>Made In Australia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="section-product__item">
+                    <div>
+                        <h1 class="title-site font-weight-bold mb-3 pb-1">The Thiicky shampoo kit, designed to
+                            thicken
+                            and
+                            revitalise fine hair.</h1>
+                        <div>
+                            <div class="sub-title font-italic pr-lg-3">“After only 3-4 weeks of using the Thiicky
+                                hair
+                                kit I
+                                was
+                                amazed
+                                how strong my hair felt, i just suddenly had bigger fuller hair”. - Amanda K
+                            </div>
+                            <ul class="p-4 mb-4 color-dark benefits__list text-capitalize text-small list-group list-group-flush">
+                                <li>30 day money back guarantee + FREE delivery on all orders</li>
+                                <li>Australian made and Shipped</li>
+                                <li>Natural and chemical free formula</li>
+                                <li>Designed to grow and thicken your hair</li>
                             </ul>
-
-                            <div class="info">
-                                <div class="info__header d-flex justify-content-between">
-                                    <h5 class="info__title">How much do I need?</h5>
-                                    <p class="info__subtitle">Recommend Quality</p>
-                                </div>
-
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>Short hair</td>
-                                        <td>1 pump</td>
-                                        <td>Every 2 days</td>
-                                        <td>
-                                            <div class="bottles">
-                                                <div class="bottles__item"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Medium hair</td>
-                                        <td>1.5 pump</td>
-                                        <td>Every 2-3 days</td>
-                                        <td>
-                                            <div class="bottles">
-                                                <div class="bottles__item"></div>
-                                                <div class="bottles__item"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Long hair</td>
-                                        <td>2 pump</td>
-                                        <td></td>
-                                        <td>
-                                            <div class="bottles">
-                                                <div class="bottles__item"></div>
-                                                <div class="bottles__item"></div>
-                                                <div class="bottles__item"></div>
-                                                <div class="bottles__item"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                                <div class="info__footer row">
-                                    <div class="mb-2 col-sm-4 d-flex align-items-center">
-                                        <div class="info__icon-wrap">
-                                            <img src="./assets/img/svg/fast-delivery.svg" class="info__icon" alt="Car">
-                                        </div>
-                                        <small>Shipped from Melbourne</small>
-                                    </div>
-                                    <div class="mb-2 col-sm-4 d-flex align-items-center">
-                                        <div class="info__icon-wrap">
-                                            <img src="./assets/img/svg/molecula.svg" class="info__icon" alt="Parabens">
-                                        </div>
-                                        <small>No parabens or sulphates</small>
-                                    </div>
-                                    <div class="mb-2 col-sm-4 d-flex align-items-center">
-                                        <div class="info__icon-wrap">
-                                            <img src="./assets/img/svg/kangaroo.svg" class="info__icon" alt="Kangaroo">
-                                        </div>
-                                        <small>Made In Australia</small>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="section-product__item">
-                        <div>
-                            <h1 class="title-site font-weight-bold mb-3 pb-1">The Thiicky shampoo kit, designed to
-                                thicken
-                                and
-                                revitalise fine hair.</h1>
-                            <div>
-                                <div class="sub-title font-italic pr-lg-3">“After only 3-4 weeks of using the Thiicky
-                                    hair
-                                    kit I
-                                    was
-                                    amazed
-                                    how strong my hair felt, i just suddenly had bigger fuller hair”. - Amanda K
-                                </div>
-                                <ul class="p-4 mb-4 color-dark benefits__list text-capitalize text-small list-group list-group-flush">
-                                    <li>30 day money back guarantee + FREE delivery on all orders</li>
-                                    <li>Australian made and Shipped</li>
-                                    <li>Natural and chemical free formula</li>
-                                    <li>Designed to grow and thicken your hair</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="section-product__item">
-                        <div>
-                            <form action="/">
-                                <div class="color-dark py-10 pr-16 pl-40 card-bonus mb-4">
-                                    <label for="card1" class="label-checkmark">
-                                        <input type="radio" id="card1" class="radio" name="bonus" value="$129.60">
+                <div class="section-product__item">
+                    <div>
+                        <form action="/">
+                            <div class="color-dark py-10 pr-16 pl-40 card-bonus mb-4">
+                                <label for="card1" class="label-checkmark">
+                                    <input type="radio" id="card1" class="radio" name="bonus" value="$129.60">
 
-                                        <div class="check-mark"></div>
+                                    <div class="check-mark"></div>
 
-                                        <div class="wrap-img flex-shrink-0">
-                                            <img src="assets/img/product1m.jpg" alt="‘The Standard Pack"
-                                                 class="card-bonus__img"
-                                                 width="128" height="128">
-                                        </div>
+                                    <div class="wrap-img flex-shrink-0">
+                                        <img src="assets/img/product1m.jpg" alt="‘The Standard Pack"
+                                             class="card-bonus__img"
+                                             width="128" height="128">
+                                    </div>
 
-                                        <div class="card-bonus__content text-capitalize flex-grow-1">
-                                            <h5 class="card-bonus__title color-dark"><img
-                                                    src="assets/img/svg/reward-red.svg"
-                                                    alt="reward red"
-                                                    class="card-bonus__icon">
-                                                <strong class="text-uppercase">Package 1 -</strong> ‘The Standard Pack’
-                                            </h5>
+                                    <div class="card-bonus__content text-capitalize flex-grow-1">
+                                        <h5 class="card-bonus__title color-dark"><img
+                                                src="assets/img/svg/reward-red.svg"
+                                                alt="reward red"
+                                                class="card-bonus__icon">
+                                            <strong class="text-uppercase">Package 1 -</strong> ‘The Standard Pack’
+                                        </h5>
 
-                                            <div class="d-flex align-items-end">
-                                                <div class="description w-50">
-                                                    <div>1 x Shampoo kits<br>All 4 Products</div>
-                                                    <div class="color-pink text-uppercase">SAVE 20%</div>
-                                                </div>
-                                                <div class="cost text-right w-50 color-pink">
-                                                    <div>
-                                                        <del class="old-cost">$162.00</del>
-                                                    </div>
-                                                    <div class="text-medium">$129.60</div>
-                                                    <div>SAVE $32.40!</div>
-                                                </div>
+                                        <div class="d-flex align-items-end">
+                                            <div class="description w-50">
+                                                <div>1 x Shampoo kits<br>All 4 Products</div>
+                                                <div class="color-pink text-uppercase">SAVE 20%</div>
                                             </div>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="color-dark py-10 pr-16 pl-40 card-bonus mb-4">
-                                    <label for="card2" class="label-checkmark ">
-                                        <input type="radio" id="card2" class="radio" name="bonus" value="$226.80">
-
-                                        <div class="check-mark"></div>
-
-                                        <div class="wrap-img wrap-img_mark flex-shrink-0">
-                                            <img src="assets/img/product2m.jpg" alt="‘The Standard Pack"
-                                                 class="card-bonus__img card-bonus__img_mark"
-                                                 width="128" height="128">
-                                        </div>
-
-                                        <div class="card-bonus__content text-capitalize flex-grow-1">
-                                            <h5 class="card-bonus__title color-dark"><img
-                                                    src="assets/img/svg/reward-green.svg"
-                                                    alt="reward red"
-                                                    class="card-bonus__icon">
-                                                <strong class="text-uppercase">Package 2 -</strong> ‘The Value pack’
-                                            </h5>
-
-                                            <div class="d-flex align-items-end">
-                                                <div class="description w-50">
-                                                    <div>2 x Shampoo kits<br>8 Products</div>
-                                                    <div class="color-pink text-uppercase">SAVE 30%</div>
+                                            <div class="cost text-right w-50 color-pink">
+                                                <div>
+                                                    <del class="old-cost">$162.00</del>
                                                 </div>
-                                                <div class="cost text-right w-50 color-pink">
-                                                    <div>
-                                                        <del class="old-cost">$324.00</del>
-                                                    </div>
-                                                    <div class="text-medium">$226.80</div>
-                                                    <div>SAVE $97.20!</div>
-                                                </div>
+                                                <div class="text-medium">$129.60</div>
+                                                <div>SAVE $32.40!</div>
                                             </div>
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="color-dark py-10 pr-16 pl-40 card-bonus mb-5">
-                                    <label for="card3" class="label-checkmark">
-                                        <input type="radio" id="card3" class="radio" name="bonus" value="$226.80">
-
-                                        <div class="check-mark"></div>
-
-                                        <div class="wrap-img flex-shrink-0">
-                                            <img src="assets/img/product3m.jpg" alt="‘The Standard Pack"
-                                                 class="card-bonus__img"
-                                                 width="128" height="128">
-                                        </div>
-
-                                        <div class="card-bonus__content text-capitalize flex-grow-1">
-                                            <div class="card-bonus__heading">
-                                                <h5 class="card-bonus__title color-dark pl-0 mb-0 text-uppercase">
-                                                    <strong>BONUS
-                                                        value 25%
-                                                        OFF!</strong></h5>
-                                                <div class="card-bonus__reating rating-list__stars d-flex align-items-center">
-                                                    <small>Rating:</small>
-                                                    <div class="stars">
-                                                        <div class="stars__item stars__item_fill"></div>
-                                                        <div class="stars__item stars__item_fill"></div>
-                                                        <div class="stars__item stars__item_fill"></div>
-                                                        <div class="stars__item stars__item_fill"></div>
-                                                        <div class="stars__item stars__item_fill"></div>
-                                                    </div>
-                                                    <small>5.0</small>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-end">
-                                                <div class="description w-50">
-                                                    <p class="mb-0">1 x Derma Roller</p>
-                                                    <p class="mb-0 text-small text-lowercase">Scalp and follicle
-                                                        stimulator,
-                                                        grow hair faster with this
-                                                        non-chemical device
-                                                    </p>
-
-                                                </div>
-                                                <div class="cost text-right w-50 color-pink">
-                                                    <div>
-                                                        <del class="old-cost">$48.00</del>
-                                                    </div>
-                                                    <div class="text-medium">$36.00</div>
-                                                    <div>SAVE $12.00!</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <footer>
-                                    <a href="https://www.thiicky.com.au/cart"
-                                       class="link-cart py-3 btn btn-lg btn-block text-white bg-pink">
-                                        <img src="assets/img/svg/cart.svg" alt="cart" width="21" height="17"> Add To
-                                        Cart
-                                        <span class="bonus-amount"></span>
-                                    </a>
-
-                                    <div class="d-flex flex-wrap justify-content-center align-items-center color-dark ">
-                                        <div class="d-flex justify-content-center align-items-center mb-2 mt-3 flex-wrap text-center">
-                                            <p class="mb-0">All transactions secured and encrypted</p>
-                                            <img class="pl-2" src="assets/img/svg/block-logo1.svg" alt="Payment"
-                                                 width="148"
-                                                 height="25">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-baseline flex-wrap">
-                                            <img src="assets/img/svg/payment-options.svg" alt="Payment" width="252"
-                                                 height="29">
-                                            <img src="assets/img/svg/logo-site.svg" class="pl-2" alt="Thiicky"
-                                                 width="66"
-                                                 height="21">
                                         </div>
                                     </div>
-                                </footer>
-                            </form>
-                        </div>
+                                </label>
+                            </div>
+                            <div class="color-dark py-10 pr-16 pl-40 card-bonus mb-4">
+                                <label for="card2" class="label-checkmark ">
+                                    <input type="radio" id="card2" class="radio" name="bonus" value="$226.80">
+
+                                    <div class="check-mark"></div>
+
+                                    <div class="wrap-img wrap-img_mark flex-shrink-0">
+                                        <img src="assets/img/product2m.jpg" alt="‘The Standard Pack"
+                                             class="card-bonus__img card-bonus__img_mark"
+                                             width="128" height="128">
+                                    </div>
+
+                                    <div class="card-bonus__content text-capitalize flex-grow-1">
+                                        <h5 class="card-bonus__title color-dark"><img
+                                                src="assets/img/svg/reward-green.svg"
+                                                alt="reward red"
+                                                class="card-bonus__icon">
+                                            <strong class="text-uppercase">Package 2 -</strong> ‘The Value pack’
+                                        </h5>
+
+                                        <div class="d-flex align-items-end">
+                                            <div class="description w-50">
+                                                <div>2 x Shampoo kits<br>8 Products</div>
+                                                <div class="color-pink text-uppercase">SAVE 30%</div>
+                                            </div>
+                                            <div class="cost text-right w-50 color-pink">
+                                                <div>
+                                                    <del class="old-cost">$324.00</del>
+                                                </div>
+                                                <div class="text-medium">$226.80</div>
+                                                <div>SAVE $97.20!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="color-dark py-10 pr-16 pl-40 card-bonus mb-5">
+                                <label for="card3" class="label-checkmark">
+                                    <input type="radio" id="card3" class="radio" name="bonus" value="$226.80">
+
+                                    <div class="check-mark"></div>
+
+                                    <div class="wrap-img flex-shrink-0">
+                                        <img src="assets/img/product3m.jpg" alt="‘The Standard Pack"
+                                             class="card-bonus__img"
+                                             width="128" height="128">
+                                    </div>
+
+                                    <div class="card-bonus__content text-capitalize flex-grow-1">
+                                        <div class="card-bonus__heading">
+                                            <h5 class="card-bonus__title color-dark pl-0 mb-0 text-uppercase">
+                                                <strong>BONUS
+                                                    value 25%
+                                                    OFF!</strong></h5>
+                                            <div class="card-bonus__reating rating-list__stars d-flex align-items-center">
+                                                <small>Rating:</small>
+                                                <div class="stars">
+                                                    <div class="stars__item stars__item_fill"></div>
+                                                    <div class="stars__item stars__item_fill"></div>
+                                                    <div class="stars__item stars__item_fill"></div>
+                                                    <div class="stars__item stars__item_fill"></div>
+                                                    <div class="stars__item stars__item_fill"></div>
+                                                </div>
+                                                <small>5.0</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-end">
+                                            <div class="description w-50">
+                                                <p class="mb-0">1 x Derma Roller</p>
+                                                <p class="mb-0 text-small text-lowercase">Scalp and follicle
+                                                    stimulator,
+                                                    grow hair faster with this
+                                                    non-chemical device
+                                                </p>
+
+                                            </div>
+                                            <div class="cost text-right w-50 color-pink">
+                                                <div>
+                                                    <del class="old-cost">$48.00</del>
+                                                </div>
+                                                <div class="text-medium">$36.00</div>
+                                                <div>SAVE $12.00!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <footer>
+                                <a href="https://www.thiicky.com.au/cart"
+                                   class="link-cart py-3 btn btn-lg btn-block text-white bg-pink">
+                                    <img src="assets/img/svg/cart.svg" alt="cart" width="21" height="17"> Add To
+                                    Cart
+                                    <span class="bonus-amount"></span>
+                                </a>
+
+                                <div class="d-flex flex-wrap justify-content-center align-items-center color-dark ">
+                                    <div class="d-flex justify-content-center align-items-center mb-2 mt-3 flex-wrap text-center">
+                                        <p class="mb-0">All transactions secured and encrypted</p>
+                                        <img class="pl-2" src="assets/img/svg/block-logo1.svg" alt="Payment"
+                                             width="148"
+                                             height="25">
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-baseline flex-wrap">
+                                        <img src="assets/img/svg/payment-options.svg" alt="Payment" width="252"
+                                             height="29">
+                                        <img src="assets/img/svg/logo-site.svg" class="pl-2" alt="Thiicky"
+                                             width="66"
+                                             height="21">
+                                    </div>
+                                </div>
+                            </footer>
+                        </form>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
 

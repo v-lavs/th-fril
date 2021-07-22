@@ -2,7 +2,7 @@
   color: #333333;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   width: 32px;
   height: 24px;
   background-image: url(../assets/img/svg/burger.svg);
@@ -12,6 +12,9 @@
 }
 
 .header {
+  overflow: hidden;
+  margin-bottom: 28px;
+
   &__logo {
     max-width: 200px;
     height: auto;
@@ -24,7 +27,7 @@
     }
   }
 
-  &__top{
+  &__top {
     background-color: $pink;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -34,10 +37,48 @@
   &__bottom {
     background-color: $gray-100;
     padding-top: 10px;
-    padding-bottom: 4px;
   }
 
   .rating-logo {
     margin-top: -3px;
   }
+
+  &__rating {
+    width: 100%;
+    padding-top: 12px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 50%;
+      right: 0;
+      top: 0;
+      bottom: -8px;
+      width: 100vw;
+      background-color: #ffffff;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  @include respond-to($lg) {
+    .header__nav {
+      order: 2;
+    }
+    .header__bottom {
+      padding-bottom: 4px;
+    }
+    .header__rating {
+      order: 1;
+      padding: 0;
+      width: auto;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
 }
+
